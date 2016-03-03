@@ -4,5 +4,5 @@
 2.待优化：
     a.查看排名模块未实现
     b.动画效果未实现
-界面展示如下：
+界面展示如下所示：
 ![image](https://github.com/XiaozhiGuo/Game2048/GameUI.JPG)
