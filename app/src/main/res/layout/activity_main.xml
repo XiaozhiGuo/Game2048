@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="#faf8ef"
+    tools:context="com.xiaozhi.game2048.MainActivity">
+    <LinearLayout
+        android:background="#faf8ef"
+        android:layout_weight="1.15"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+       <TextView
+           android:textSize="18pt"
+           android:text="Game 2048"
+           android:gravity="center"
+           android:textColor="#4e72b8"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" />
+    </LinearLayout>
+    <com.xiaozhi.game2048.GameView
+        android:background="@color/backColor"
+        android:id="@+id/gameView"
+
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </com.xiaozhi.game2048.GameView>
+    <LinearLayout
+        android:layout_weight="1.15"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:textColor="#1b315e"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/score"
+            android:gravity="center"/>
+        <TextView
+            android:textColor="#1b315e"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvscore"
+            android:text=""
+            />
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="查看排名"
+            android:background="#1d953f"
+            android:textColor="#fefefe"
+            android:layout_marginRight="12dp"
+            android:onClick="rank"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
